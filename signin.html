@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAKE</title>
+    <title>CampusHive</title>
     <STYLE TYPE="TEXT/CSS">
         *{
             text-decoration: none  ;
@@ -11,7 +11,8 @@
 
         }
         .navbar{
-            background: rgb(79, 79, 242); font-family: calibri; padding-right: 15px;padding: 15px;
+            background: #a37946; font-family: calibri; padding-right: 15px;padding: 15px;
+            border-radius: 15px; opacity: 0.8;
             
         }
         .navdiv{
@@ -33,22 +34,25 @@
             color: white;font-weight: bold;font-size:15px ; 
          }
          #bar2{
-            background-color: rgb(124, 124, 136); width: 800px;height: 800px;margin: auto;margin-top: 50px;
-            padding: 10px;text-align: center;padding-top: 60px;font-size: 35px;
-
-
+            background-color: khaki; width: 800px;height: 800px;margin: auto;margin-top: 50px;
+            padding: 10px;text-align: center;padding-top: 60px;font-size: 35px; margin-bottom: 50px;
+            border-radius: 30px; opacity: 0.8;
+         }
+         body{
+            background-image: url(sign\ up\ background.jpeg);
+            background-size: cover;
          }
          #text{
             height: 40px;width: 300px;border-radius: 4px;border: solid 1px #888;
-            padding: 4px;font-size: 14px;
+            padding: 4px;font-size: 14px;font-family: fantasy;
          }
          #button{
-            width: 300px;
+            width: 200px;
             height: 40px;
-            border-radius:4px ;
-            font-weight: bold;
-            border: none;
-            background-color: rgb(183, 166, 144);
+            border-radius:8px ;
+            font-weight: bolder;
+            border: solid 4px black;
+            background-color: rgb(138, 129, 116);
          }
        
     
@@ -61,7 +65,7 @@
       
         <nav class="navbar">
             <div class="navdiv">
-                <div class="logo"><a href="#">STAKE</a></div>
+                <div class="logo"><a href="#">Campus'Hive &#9990;</a></div>
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">POST</a></li>
@@ -74,7 +78,7 @@
         </nav>
     </header>
     <div id="bar2">
-        SIGN UP TO STAKE<br><br>
+        SIGN UP TO Campus'Hive &#9990;<br><br>
         <input type="text" id="text" placeholder="FIRST NAME"><br><br>
         <input type="text" id="text" placeholder="LAST NAME"><br><br>
         GENDER<br>
@@ -89,7 +93,7 @@
         <input type="text" id="text" placeholder="EMAIL"><br><br>
         
         <input type="password" id="text" placeholder="PASSWORD"><br><br>
-        <input type="password" id="text" placeholder="RETYPE PASSWORD"><br><br>
+        <input type="password" id="text" placeholder="CONFIRM PASSWORD"><br><br>
         <input type="submit" id="button" value="sign up">
 
     </div>
