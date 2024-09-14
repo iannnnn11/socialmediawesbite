@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE | STAKE</title>
+    </head>
+    <style type="text/css">
+        #bluebar{
+            height: 50px;
+            background-color: #405d9b;
+            color: #d9dfeb;
+
+        }
+        #search_box{
+            width: 400px;
+            height: 20px;
+            border: none;
+            padding: 4px;
+            font-size: 14px;
+            background-image: url(search.png);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+        #profile_pic{
+            width: 150px;
+            margin-top: -200px;
+            border-radius: 50%;
+            border: solid 2px white;
+        }
+        #menu{
+            width: 100px;
+            margin: 2px;
+            display: inline-block;
+        }
+        #friend_img{
+            width: 75px;
+            float: left;
+            margin: 8px;
+
+
+        }
+        #friend_bar{
+            background-color: white;
+            min-height: 400px;
+            width: 200px;
+            margin-top: 20px;
+            color: #aaa;
+            padding: 8px;
+
+        }
+        #friends{
+            clear: both;
+            font-size: 12PX;
+            font-weight: bold;
+            color: #405d9b;
+        }
+        textarea{
+            width: 100%;
+            font-size: 14px;
+            height: 60px;
+            border: none;
+        }
+        #post_button{
+            float: right;
+            background-color: #405d9b;
+            border: none;
+            color: white;
+            font-size: 14px;
+            border-radius: 2px;
+            width: 50px;
+        }
+        #post_bar{
+            margin-top: 20px;
+            background-color: white;
+            padding: 10px;
+        }
+        #post{
+            padding: 4px;
+            font-size: 13px;
+            display: flex;
+        }
+
+    </style>
+    <body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;background-color: #d0d8e4;">
+        <!--topbar-->
+        <div id="bluebar">
+            <div style="width: 800px;  font-size: 30px; margin: auto;;">
+                STAKE &nbsp;&nbsp;<input type="text" id="search_box" placeholder="search for people">
+                <img src="selfie.jpg" style="width: 50px; float: right;">
+
+            </div> 
+           </div>
+           <!--cover area-->
+           <div style="width: 700px;margin: auto;min-height: 400px;">
+            <div style="background-color: white;text-align: center;color: #405d9b;">
+                <img src="mountain.jpg" style="width: 100%;">
+                <img id="profile_pic" src="selfie.jpg"><BR>
+                <div style="font-size: 20px;">Joel Stake</div><br>
+                <br>
+                <div  id="menu">TIMELINE </div>
+                <div id="menu">ABOUT</div> 
+                <DIV id="menu">FRIENDS</DIV> 
+                <div id="menu"> PHOTOS</div>
+                <div id="menu">SETTINGS</div>
+            </div>
+            <!--belowcover area-->
+            <div style="display: flex;">
+                <!--friends area-->
+                <div style="min-height: 400px;flex: 1;">
+                    <div id="friend_bar">
+                        friends<br>
+                        <div id="friends">
+                            <img id="friend_img"  src="user1.jpg">
+                            <br>
+                            FEBIN
+
+                        </div>
+                        <div id="friends">
+                            <img id="friend_img"  src="user2.jpg">
+                            <br>
+                            ARYAN
+                            
+                        </div>
+                        <div id="friends">
+                            <img id="friend_img"  src="user3.jpg">
+                            <br>
+                            JOEL
+                            
+                        </div>
+                        <div id="friends">
+                            <img id="friend_img"  src="user4.jpg">
+                            <br>
+                            LESTER
+                            
+                        </div>
+                    </div>
+                </div>    
+<!--posts area -->
+                    <div style="min-height: 400px;flex: 2.5;padding: 20px;padding-right: 0px;">
+                        <div style="border: solid thin #aaa; padding: 10px; background-color: white;">
+                            <textarea placeholder="whats on your mind?"></textarea>
+                            <input id="post_button" type="submit">
+                            <br>
+                        </div>
+
+                        
+                    <!--posts-->
+                    <div id="post_bar">
+                        <div id="post" >
+                            <div>
+                            <img src="user1.jpg" style="width: 75px; margin: 4px;">
+
+                        </div>
+                        <div style="font-weight: bold;color: #405d9b;">
+                            FEBIN RAJU<br>
+                            Don Bosco Institute of Technology is a private engineering college situated at Kurla, Mumbai affiliated with the University of Mumbai. It has been granted a "Religious Minority" status
+                            <br/><br/>
+                            <a href="" >Like</a>. <a href="">comment</a> . <span style="color: #999;"> april 28 2024</span> 
+                        </div>
+
+                    </div>
+                    <!--posts-->
+                    <div id="post_bar">
+                        <div id="post" >
+                            <div>
+                            <img src="user3.jpg" style="width: 75px; margin: 4px;">
+
+                        </div>
+                        <div style="font-weight: bold;color: #405d9b;">
+                            FEBIN RAJU<br>
+                            Don Bosco Institute of Technology is a private engineering college situated at Kurla, Mumbai affiliated with the University of Mumbai. It has been granted a "Religious Minority" status
+                            <br/><br/>
+                            <a href="" >Like</a>. <a href="">comment</a> . <span style="color: #999;"> april 28 2024</span> 
+                        </div>
+
+                    </div>
+                    <!--posts-->
+                    <div id="post_bar">
+                        <div id="post" >
+                            <div>
+                            <img src="user2.jpg" style="width: 75px; margin: 4px;">
+
+                        </div>
+                        <div style="font-weight: bold;color: #405d9b;">
+                            FEBIN RAJU<br>
+                            Don Bosco Institute of Technology is a private engineering college situated at Kurla, Mumbai affiliated with the University of Mumbai. It has been granted a "Religious Minority" status
+                            <br/><br/>
+                            <a href="" >Like</a>. <a href="">comment</a> . <span style="color: #999;"> april 28 2024</span> 
+                        </div>
+
+                    </div>
+                    
+                    <!--posts-->
+                    <div id="post_bar">
+                        <div id="post" >
+                            <div>
+                            <img src="user4.jpg" style="width: 75px; margin: 4px;">
+
+                        </div>
+                        <div style="font-weight: bold;color: #405d9b;">
+                            FEBIN RAJU<br>
+                            Don Bosco Institute of Technology is a private engineering college situated at Kurla, Mumbai affiliated with the University of Mumbai. It has been granted a "Religious Minority" status
+                            <br/><br/>
+                            <a href="" >Like</a>. <a href="">comment</a> . <span style="color: #999;"> april 28 2024</span> 
+                        </div>
+
+                    </div>
+                    
+
+                    </div>
+                 </div>
+                </div>
+
+           </div>
+
+    </body>
+    </html>
