@@ -47,6 +47,6 @@ class db
     
     }
 }
-$DB= new database() ;
+$DB= new database();
 
 
