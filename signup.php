@@ -42,12 +42,15 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
 
 ?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>STAKE</title>
+    <title>CampusHive</title>
     <STYLE TYPE="TEXT/CSS">
         *{
             text-decoration: none  ;
@@ -55,7 +58,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
         }
         .navbar{
-            background: rgb(79, 79, 242); font-family: calibri; padding-right: 15px;padding: 15px;
+            background: #a37946; font-family: calibri; padding-right: 15px;padding: 15px;
+            border-radius: 15px; opacity: 0.8;
             
         }
         .navdiv{
@@ -77,22 +81,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             color: white;font-weight: bold;font-size:15px ; 
          }
          #bar2{
-            background-color: rgb(124, 124, 136); width: 800px;height: 800px;margin: auto;margin-top: 50px;
-            padding: 10px;text-align: center;padding-top: 60px;font-size: 35px;
-
-
+            background-color: khaki; width: 800px;height: 800px;margin: auto;margin-top: 50px;
+            padding: 10px;text-align: center;padding-top: 60px;font-size: 35px; margin-bottom: 50px;
+            border-radius: 30px; opacity: 0.8;
+         }
+         body{
+            background-image: url(sign\ up\ background.jpeg);
+            background-size: cover;
          }
          #text{
             height: 40px;width: 300px;border-radius: 4px;border: solid 1px #888;
-            padding: 4px;font-size: 14px;
+            padding: 4px;font-size: 14px;font-family: fantasy;
          }
          #button{
-            width: 300px;
+            width: 200px;
             height: 40px;
-            border-radius:4px ;
-            font-weight: bold;
-            border: none;
-            background-color: rgb(183, 166, 144);
+            border-radius:8px ;
+            font-weight: bolder;
+            border: solid 4px black;
+            background-color: rgb(138, 129, 116);
          }
        
     
@@ -101,48 +108,43 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
    
 </head>
 <body>
-    <header>
+    <form method="post" action="">
+        <header>
+            
+              <nav class="navbar">
+                  <div class="navdiv">
+                      <div class="logo"><a href="#">Campus'Hive &#9990;</a></div>
+                      <ul>
+                          <li><a href="#">HOME</a></li>
+                          <li><a href="#">POST</a></li>
+                          <li><a href="#">LIKES</a></li>
+                          <button><a href="http://127.0.0.1:3000/profile.html">SIGN IN</a></button>
+                      </ul>
       
-        <nav class="navbar">
-            <div class="navdiv">
-                <div class="logo"><a href="#">STAKE</a></div>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">POST</a></li>
-                    <li><a href="#">LIKES</a></li>
-                    <button><a href="http://127.0.0.1:3000/profile.html">SIGN IN</a></button>
-                </ul>
-
-
-            </div>
-        </nav>
-    </header>
-    <div id="bar2">
-        SIGN UP TO CAMPUS HIVE<br><br>
-        <form method="post" action="">
-
-
-            <input value="<?php echo $first_name ?>" name="first_name" type="text" id="text" placeholder="FIRST NAME"><br><br>
-            <input value="<?php echo $last_name ?>" name ="last_name" type="text" id="text" placeholder="LAST NAME"><br><br>
-            
-            <select id="text" name="gender">
-                GENDER
-                
-                <option><?php echo $gender ?></option>    
-                <option>male</option>
-                <option>female</option>
-                
-            </select><br><br>
-            <input value="<?php echo $email ?>" name="email"  type="text" id="text" placeholder="EMAIL"><br><br>
-            
-            <input name="password1" type="password" id="text" placeholder="PASSWORD"><br><br>
-            <input name="password2" type="password" id="text" placeholder="RETYPE PASSWORD"><br><br>
-            <input type="submit" id="button" value="sign up">
-
-
-        </form>
-
-    </div>
-    
+      
+                  </div>
+              </nav>
+          </header>
+          <div id="bar2">
+              SIGN UP TO Campus'Hive &#9990;<br><br>
+              <input name ="FIRST_NAME" type="text" id="text" placeholder="FIRST NAME"><br><br>
+              <input name ="LAST_NAME" type="text" id="text" placeholder="LAST NAME"><br><br>
+              GENDER<br>
+              <select id="text" name ="GENDER">
+                  <option>
+                      male
+      
+                  </option>
+                  <option>female</option>
+      
+              </select><br><br>
+              <input name = "EMAIL" type="text" id="text" placeholder="EMAIL"><br><br>
+              
+              <input name ="PASSWORD" type="password" id="text" placeholder="PASSWORD"><br><br>
+              <input name ="PASSWORD2" type="password" id="text" placeholder="CONFIRM PASSWORD"><br><br>
+              <input type="submit" id="button" value="sign up">
+      
+          </div>
+    </form>
 </body>
 </html>
