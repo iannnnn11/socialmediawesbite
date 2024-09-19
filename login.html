@@ -13,8 +13,8 @@
         
 
         .navbar{
-            background:#836034; font-family: calibri; padding-right: 15px;padding: 15px;border-radius: 8px;
-            
+            background:#7e5d34; font-family: calibri; padding-right: 15px;padding: 15px;border-radius: 8px;
+          opacity: 0.95;  
         }
         .navdiv{
             display: flex; align-items: center; justify-content: space-between;       
@@ -49,7 +49,15 @@
             background-color: #1f566b; width: 700px;height: 450px;margin: auto;margin-top: 50px;
             padding: 10px;text-align: center;padding-top: 60px;font-size: 35px;
             margin-bottom: 75px; border-radius: 30px; opacity: 0.9; transition: all 100ms ease-in;
+           animation-name: bar2 ; animation-duration: 1s; 
+           /* animation-timing-function: aese-in-out; */
+           animation-iteration-count: 2; animation-direction: reverse;            
 
+         }
+
+         @keyframes bar2 {
+            from{left: 0px}
+            to {left:500px }
          }
 
          #bar2:hover{
@@ -86,7 +94,7 @@
             width: 130px;
             left: 65px;
             border-radius: 50%;
-            top:145px;
+            top:195px;
         
         }
 
@@ -94,12 +102,14 @@
             background-color: rgb(130, 208, 29);
             width: 150px;
             height: 150px;
-            top: 135px;
+            top: 185px;
             left: 55px;
             position: fixed;
             border-radius: 20px;
             
-        }       
+        } 
+          
+          
         
     
 
@@ -125,7 +135,7 @@
             </div>
         </nav>
     </header>
-    <div class="bar1">
+    <div class="bar1" transition: all 100ms ease-in; >
             <img src="camoushive_logo.jpeg" class="hello";>
          </div>
     <div id="bar2" font-weight:bold;>
