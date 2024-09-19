@@ -61,42 +61,43 @@
    
 </head>
 <body>
-    <header>
+    <form method="post" action="">
+        <header>
+            
+              <nav class="navbar">
+                  <div class="navdiv">
+                      <div class="logo"><a href="#">Campus'Hive &#9990;</a></div>
+                      <ul>
+                          <li><a href="#">HOME</a></li>
+                          <li><a href="#">POST</a></li>
+                          <li><a href="#">LIKES</a></li>
+                          <button><a href="http://127.0.0.1:3000/profile.html">SIGN IN</a></button>
+                      </ul>
       
-        <nav class="navbar">
-            <div class="navdiv">
-                <div class="logo"><a href="#">Campus'Hive &#9990;</a></div>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">POST</a></li>
-                    <li><a href="#">LIKES</a></li>
-                    <button><a href="http://127.0.0.1:3000/profile.html">SIGN IN</a></button>
-                </ul>
-
-
-            </div>
-        </nav>
-    </header>
-    <div id="bar2">
-        SIGN UP TO Campus'Hive &#9990;<br><br>
-        <input type="text" id="text" placeholder="FIRST NAME"><br><br>
-        <input type="text" id="text" placeholder="LAST NAME"><br><br>
-        GENDER<br>
-        <select id="text">
-            <option>
-                male
-
-            </option>
-            <option>female</option>
-
-        </select><br><br>
-        <input type="text" id="text" placeholder="EMAIL"><br><br>
-        
-        <input type="password" id="text" placeholder="PASSWORD"><br><br>
-        <input type="password" id="text" placeholder="CONFIRM PASSWORD"><br><br>
-        <input type="submit" id="button" value="sign up">
-
-    </div>
-    
+      
+                  </div>
+              </nav>
+          </header>
+          <div id="bar2">
+              SIGN UP TO Campus'Hive &#9990;<br><br>
+              <input name ="FIRST_NAME" type="text" id="text" placeholder="FIRST NAME"><br><br>
+              <input name ="LAST_NAME" type="text" id="text" placeholder="LAST NAME"><br><br>
+              GENDER<br>
+              <select id="text" name ="GENDER">
+                  <option>
+                      male
+      
+                  </option>
+                  <option>female</option>
+      
+              </select><br><br>
+              <input name = "EMAIL" type="text" id="text" placeholder="EMAIL"><br><br>
+              
+              <input name ="PASSWORD" type="password" id="text" placeholder="PASSWORD"><br><br>
+              <input name ="PASSWORD2" type="password" id="text" placeholder="CONFIRM PASSWORD"><br><br>
+              <input type="submit" id="button" value="sign up">
+      
+          </div>
+    </form>
 </body>
 </html>
