@@ -3,22 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Campus'Hive</title>
+    <title>Campus'Hive (login page)</title>
     <STYLE TYPE="TEXT/CSS">
         *{
             text-decoration: none  ;
 
 
         }
+        
+
         .navbar{
-            background:#a37946; font-family: calibri; padding-right: 15px;padding: 15px;border-radius: 8px;
+            background:#836034; font-family: calibri; padding-right: 15px;padding: 15px;border-radius: 8px;
             
         }
         .navdiv{
             display: flex; align-items: center; justify-content: space-between;       
          }
          .logo a{
-            font-size:35px ;  font-weight: 600 ;color: white; font-family: 'Tangerine', serif;
+            font-size:35px ;  font-weight: 600 ;color: rgb(255, 255, 255); font-family: 'Tangerine', serif;transition: all 0.2s ease-in;
+         }
+
+         .logo:hover{
+            transform: scale3d(1.1, 1.1,1) ;
+        
          }
          li{
             list-style: none;display: inline-block;
@@ -27,58 +34,100 @@
             color: white; font-size:18px ; font-weight: bold;margin-right: 25px;
          }
          button{
-            background-color: black;margin-left: 10px; border-radius: 10px; padding: 10px;width: 90px;
+            background-color: rgb(5, 5, 5);margin-left: 10px; border-radius: 10px; padding: 10px;width: 90px;
          }
          button a{
-            color: white;font-weight: bold;font-size:15px ; 
+            color: white;font-weight: bold;font-size:15px ; transition: all 0.7s ease-in;
          }
+
+         button:hover{
+            transform: scale3d(1.1, 1.1,1) ;
+            background-color: rgb(48, 44, 44);
+         }         
+
          #bar2{
             background-color: #1f566b; width: 700px;height: 450px;margin: auto;margin-top: 50px;
             padding: 10px;text-align: center;padding-top: 60px;font-size: 35px;
-            margin-bottom: 75px; border-radius: 30px; opacity: 0.9;
+            margin-bottom: 75px; border-radius: 30px; opacity: 0.9; transition: all 100ms ease-in;
 
          }
+
+         #bar2:hover{
+            /* transform: translateY(50px); */
+            transform: scale3d(1.1, 1.1,1);
+            opacity: 1;
+
+         }
+
          #text{
-            height: 40px;width: 300px;border-radius: 4px;border: solid 1px #888;
-            padding: 4px;font-size: 14px;
+            height: 40px;width: 300px;border-radius: 7px;border: solid 5px #888;
+            padding: 4px;font-size: 14px; opacity:1; 
          }
          #button{
-            width: 300px;
+            width: 200px;
             height: 40px;
-            border-radius:4px ;
+            border-radius:8px ;
             font-weight: bold;
             border: none;
             background-color: rgb(147, 126, 98);
+            border:3px solid black;
          }
          body{
             background-image: url(Don\ bosco\ background\ image.jpeg);
             background-size: contain;
-            background-blend-mode:screen;
-            
+             background-blend-mode:screen;
+             image-rendering: auto;
+             
          }
-       
+
+         .hello{
+            position: fixed;
+            height: auto;
+            width: 130px;
+            left: 65px;
+            border-radius: 50%;
+            top:145px;
+        
+        }
+
+        .bar1{
+            background-color: rgb(130, 208, 29);
+            width: 150px;
+            height: 150px;
+            top: 135px;
+            left: 55px;
+            position: fixed;
+            border-radius: 20px;
+            
+        }       
+        
     
 
         </style>
    
 </head>
 <body>
-    <header>
-      
+    
+    <header> -->
+        
         <nav class="navbar">
             <div class="navdiv">
                 <div class="logo"><a href="#">Campus'Hive &#9990;</a></div>
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                      
+                    <!-- <li><a href="#">HOME</a></li>
                     <li><a href="#">POST</a></li>
-                    <li><a href="#">LIKES</a></li>
-                    <button><a href="http://127.0.0.1:3000/login.html">SIGN IN</a></button>
+                    <li><a href="#">LIKES</a></li> -->
+                    <button><a href="http://localhost/CAMPUSHIVE/signup%20(1).html">SIGN IN</a></button>
                 </ul>
 
 
             </div>
         </nav>
     </header>
+    <div class="bar1">
+            <img src="camoushive_logo.jpeg" class="hello";>
+         </div>
     <div id="bar2" font-weight:bold;>
         Log In Campus'Hive &#9990;<br><br>
        
