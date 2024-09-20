@@ -108,7 +108,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
          }
          #text{
             height: 40px;width: 300px;border-radius: 4px;border: solid 1px #888;
-            padding: 4px;font-size: 14px;font-family: fantasy;
+            padding: 4px;font-size: 15px;font-family: fantasy;
          }
          #button{
             width: 200px;
@@ -125,6 +125,41 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
             transform: translateY(-10px)
          }
        
+         .bar1{
+            background-color: rgba(230, 60, 60, 0.872);
+            width: 150px;
+            height: 150px;
+            top: 185px;
+            left: 55px;
+            position: fixed;
+            border-radius: 20px;
+            animation-name: bar1 ; animation-duration: 0.5s; 
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
+           animation-iteration-count: 1; animation-direction:alternate-reverse ;opacity: 0.9;
+        } 
+        @keyframes bar1 {
+            from{left: 0px}
+            to {left:170px }
+         }
+          
+         .hello{
+            position: fixed; aspect-ratio: 1;
+            height: auto;
+            width: 135px;
+            left: 60px;
+            border-radius: 45%;
+            top:190px;
+            animation-name: hello ; animation-duration: 0.5s; 
+            animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1); 
+           animation-iteration-count: 1; animation-direction: reverse;
+           border: 2px solid rgb(245, 45, 45);opacity: 1;
+        
+        }
+
+        @keyframes hello {
+            from{left: 0px}
+            to {left:200px }
+         }
     
 
         </style>
@@ -148,6 +183,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
                   </div>
               </nav>
           </header>
+
+          <div class="bar1" transition: all 100ms ease-in; hreff="#";></div>
+            <img src="logo.jpeg" class="hello"; hreff="#";>
+         </div>
           <div id="bar2">
               SIGN UP TO Campus'Hive &#9990;<br><br>
               <input name ="FIRST_NAME" type="text" id="text" placeholder="FIRST NAME"><br><br>
