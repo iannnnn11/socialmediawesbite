@@ -47,18 +47,15 @@
 
          #bar2{
             background-color: #1f566b; width: 700px;height: 450px;margin: auto;margin-top: 50px;
-            padding: 10px;text-align: center;padding-top: 60px;font-size: 35px;
+            padding: 10px;text-align: center;padding-top: 60px;font-size: 35px;z-index: 2;
             margin-bottom: 75px; border-radius: 30px; opacity: 0.9; transition: all 100ms ease-in;
-           animation-name: bar2 ; animation-duration: 1s; 
+           /* animation-name: bar2 ; animation-duration: 1s; 
            /* animation-timing-function: aese-in-out; */
-           animation-iteration-count: 2; animation-direction: reverse;            
+           /* animation-iteration-count: 2; animation-direction: reverse;             */ 
 
          }
 
-         @keyframes bar2 {
-            from{left: 0px}
-            to {left:500px }
-         }
+         
 
          #bar2:hover{
             /* transform: translateY(50px); */
@@ -69,7 +66,7 @@
 
          #text{
             height: 40px;width: 300px;border-radius: 7px;border: solid 5px #888;
-            padding: 4px;font-size: 14px; opacity:1; 
+            padding: 4px;font-size: 14px; opacity:1; top: 500px; left: 500px;z-index: 1;
          }
          #button{
             width: 200px;
@@ -88,28 +85,43 @@
              
          }
 
-         .hello{
-            position: fixed;
-            height: auto;
-            width: 130px;
-            left: 65px;
-            border-radius: 50%;
-            top:195px;
         
-        }
 
         .bar1{
-            background-color: rgb(130, 208, 29);
+            background-color: rgba(230, 60, 60, 0.872);
             width: 150px;
             height: 150px;
             top: 185px;
             left: 55px;
             position: fixed;
             border-radius: 20px;
-            
+            animation-name: bar1 ; animation-duration: 0.5s; 
+            animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); 
+           animation-iteration-count: 1; animation-direction:alternate-reverse ;opacity: 0.9;
         } 
+        @keyframes bar1 {
+            from{left: 0px}
+            to {left:170px }
+         }
           
-          
+         .hello{
+            position: fixed; aspect-ratio: 1;
+            height: auto;
+            width: 135px;
+            left: 60px;
+            border-radius: 45%;
+            top:190px;
+            animation-name: hello ; animation-duration: 0.5s; 
+            animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1); 
+           animation-iteration-count: 1; animation-direction: reverse;
+           border: 2px solid rgb(245, 45, 45);opacity: 1;
+        
+        }
+
+        @keyframes hello {
+            from{left: 0px}
+            to {left:200px }
+         }
         
     
 
@@ -135,8 +147,8 @@
             </div>
         </nav>
     </header>
-    <div class="bar1" transition: all 100ms ease-in; >
-            <img src="camoushive_logo.jpeg" class="hello";>
+    <div class="bar1" transition: all 100ms ease-in; hreff="#";>
+            <img src="logo.jpeg" class="hello"; hreff="#";>
          </div>
     <div id="bar2" font-weight:bold;>
         Log In Campus'Hive &#9990;<br><br>
@@ -147,7 +159,7 @@
        
         <input type="submit" id="button" value="LOG IN">
 
-    </div>
+      </div>
     
 </body>
 </html>
